@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lógica de programación 2</title>
+
+    <style>
+        body { font-family: sans-serif; padding: 20px; line-height: 1.6; }
+        .resultado   { margin-top: 20px; font-weight: bold; color: #030444}; 
+        input { margin-bottom: 10px; padding: 5px; }
+    </style>
+
+</head>
+
+<body>
+    <h1>Conversor de temperaturas</h1>
+    <h2>Ingresa la temperatura en Celsius</h2>
+    <input type="number" id = "celsius" placeholder="°C" >
+
+    <select id="unidad">
+        <option value="kelvin">Convertir a Kelvin</option>
+        <option value="fahrenheit">Convertir a Fahrenheit</option>
+        <option value="ambas">Convertir a Ambas</option>
+    </select>
+    
+    <button onclick="convertir()">Convertir</button>
+
+
+    <div id = "resultado"class = "resultado"></div>
+
+    <script src="./main.js"></script>
+    
+</body>
+</html>
